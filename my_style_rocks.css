@@ -1,0 +1,1183 @@
+/* ------------------Αφορούν τη σελίδα index και το header ολων -------------------------*/
+
+
+/* mμορφοποιούμε το header, βάζουμε χρώμα στο μπακγκραουντ και το στήνουμε*/
+.header{
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    z-index: 10;
+    top: 0;
+    position: relative; 
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+
+
+
+
+/* προσθέτουμε γραμματοσειρά που βρήκαμε στο ιντερνετ*/
+@font-face {
+    font-family: cinzel;
+    src:url(fonts/CinzelDecorative-Regular.ttf) ;
+  }
+
+  
+/* στην ουσία είναι η λίστα που έχει το navigation bar μας*/
+.header-right{
+    /*margin-left: 20%;*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.header a{
+    
+    overflow: hidden;
+}
+
+/* για το κάθε αντικείμενο της λίστας, τα κεντράρουμε*/
+.header-right li {
+  /*float: left;*/
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* μορφοποιούμε το κάθε αντικείμενο του μενού μας */
+  .header-right li a{
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+  }
+  
+  /* αλλάζουμε το χρώμα του χοβερ κάθε αντικειμενου του μενού*/
+  .header-right li a:hover {
+    background-color: #ddd;
+    color: black;
+    overflow: hidden;
+  }
+  
+  /* αλλάζουμε το χρώμα της active σελίδας στο μενού*/
+  .header-right li a.active {
+    background-color: #f58b8b67;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+
+  /* αλλάζουμε στοιχεία της μη ταξινομημένης λίστας του ναβ μπαρ */
+  .header-right ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    overflow: hidden;
+    
+  }
+
+  li{
+    list-style-type: none;
+  }
+  
+  /* το βίντεο της αρχικής σελίδας */
+  .myVideo {
+    z-index: 0;
+    position: relative;
+    top: -120px;
+    right: 0;
+    bottom: 0;
+    
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+    
+  }
+  
+  /* το περιεχόμενο μπορστα από το βιντεο*/
+  .content{
+    position: relative;
+    top: -50vh;
+  
+    padding-left: 5%;
+    overflow:hidden;
+    
+    
+  }
+  /* αλλάζουμε γραμματοσειρές κτλ*/
+  .content h2{
+    font-size: 5vw;
+    font-family: cinzel;
+    color:#f5c5a9 ;
+    font-weight: 100;
+    overflow: hidden;
+    
+  }
+  /* αλλάζουμε γραμματοσειρές κτλ*/
+  .content p{
+    font-size: 5vw;
+    position: relative;
+    top: -80px;
+    font-family: cinzel;
+    padding-left: 60px;
+    color:#f5c5a9 ;
+    overflow: hidden;
+  }
+  /* μηδενίζουμε το μαρτζιν σε ολο το body*/
+  body{
+    margin: 0;
+    
+  }
+
+  /* πηγαίνουμε πιο πάνω ο΄τι βρίσκεται κάτω απο το βιντεο, το οποίο είχαμε μετακινη΄σει πιο πανω για να φαίνεται λες και βρίεκται στο φόντο*/
+  .under_video{
+    
+    position: relative;
+    top: -35vh;
+    
+    
+  }
+ 
+  /* προϊόντα που θέλουμε να αναδείξουμε στην αρχική σελίδα*/
+  .prod{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  /* πρώτο μπάννερ αρχικής σελίδας*/
+  .something1{
+    background-image:linear-gradient(0deg, rgb(26, 10, 0), rgba(0, 0, 0, 0)), url("lavender.png");
+    min-height: 800px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+  /* Center the background image */
+    background-position: center;
+
+  /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+    background-size: cover;
+   
+
+    
+    
+    
+    
+
+  }
+  /* αλλάζουμε γρμματοσειρές κτλ μέσα στα μπαννερς */
+  .something1 h2,.something2 h2, .something3 h2{
+    position: relative;
+    top: 14em;
+    padding-left:5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: #f5c5a9;
+    overflow: hidden;
+    font-weight: 100;
+  }
+/* αλλάζουμε γρμματοσειρές κτλ μέσα στα μπαννερς */
+  .something1 h3, .something2 h3, .something3 h3{
+    position: relative;
+    top: 20em;
+    padding-left:5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #f5c5a9;
+    overflow: hidden;
+    font-weight: 100;
+  }
+
+
+
+  /* πρώτο μπάννερ αρχικής σελίδας*/
+  .something2{
+    background-image: linear-gradient(0deg, rgba(26, 10, 0, 0.644), rgba(0, 0, 0, 0)),url("hydrangea.jpg");
+    min-height: 800px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+  /* Center the background image */
+    background-position: center;
+
+  /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+    background-size: cover;
+    
+    
+  }
+  /* αφαιρούμε το margin απο τα h2 του δεύτερου μπαννερ*/
+  .something2 h2{
+    margin: 0;
+    
+  }
+  /* πρώτο μπάννερ αρχικής σελίδας*/
+  .something3{
+    background-image: linear-gradient(0deg, rgba(26, 10, 0, 0.712), rgba(0, 0, 0, 0)),url("orchid.jpg");
+    min-height: 800px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+  /* Center the background image */
+    background-position: center;
+
+  /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+    background-size: cover;
+    
+  }
+  /* αφαιρούμε το margin απο τα h2 του τρίτου μπαννερ*/
+  .something3 h2{
+    margin: 0;
+    
+  }
+  /* αφορά τη φόρμα που έχουμε βάλει για συμπλήρωση πάνω από το φούτερ της αρχικής σελίδας*/
+  .newsletter{
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    
+    
+    /*background-color: rgb(197,215,228); cdb3e0*/
+    background-image: linear-gradient(  #b6b6b675 25%, #f58b8b67 75%);
+    background-attachment: fixed;
+    height: 250px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 30px;
+  }
+  /* αλλάζουμε το μέγεθος της μπάρας εισόδου στη φόρμα */
+  .newsletter input{
+    width: 60%;
+  }
+  /*---------------- GIA SOCIAL MEDIA -------------------------*/
+/*
+  .fa {
+    
+  }*/
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook, .fa-twitter, .fa-instagram, .fa-pinterest {
+    background: #f58b8b67;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  
+   
+   
+
+  /* μορφοποιούμε το φοοτερ τως σελίδων*/
+  footer{
+    margin: 0;
+    background-color: #b6b6b675;
+    padding-top: 10px;
+    padding-bottom: 0;
+    clear: both;
+    /*position: relative;*/
+    height:fit-content;
+    
+    /*margin-top: -300px;*/
+  }
+  /* το section που περιέχει τα αντικείμενα που έχουμε στο footer*/
+  .fot{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+
+ 
+
+ 
+  
+
+
+
+  
+
+
+
+  
+  /* αλλαγή γραμματοσειράς */
+  footer h4{
+    font-family: cinzel;
+  }
+
+  /* μορφοποίηση των στοιχείων επικοινωνίας που βρίσκονται στο footer*/
+  .contact_data{
+    /*grid-column: 1/2;*/
+    text-align: center;
+    padding-top: 50px;
+    list-style-type: none;
+    
+  }
+
+  .contact_data li{
+    padding-bottom: 15px;
+    list-style-type: none;
+    
+  }
+  /* μορφοποίηση του menu που βρίσκονται στο footer*/
+  .footer_menu{
+    /*grid-column: 2/3;*/
+    text-align: center;
+    padding-top: 50px;
+    
+  }
+
+  
+
+  
+    /* μορφοποίηση των social media buttons  που βρίσκονται στο footer*/
+  .social{
+    /*grid-column: 3/4;*/
+    text-align: center;
+    padding-top: 50px;
+  }
+
+
+/* ------------------Αφορούν τη σελίδα contact -------------------------*/
+ 
+  /* το section που περιέχει τη φορμα επικοινωνιας και το κουμπι */
+  .form{
+    border-radius: 10% 0% 10% 0%;
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+    margin-top: 2%;
+    
+    padding-left: 50%;
+    padding-right:20%;
+    padding-top: 50px;
+    background-image: url("sakura.jpg");
+    background-size:cover;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+  /* το fieldset της φορμας επικοινωνιας*/
+  .inform{
+    background-color: #ffffffcb;
+    height:fit-content;
+    /*width: 300%;*/
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 2%;
+    display: block;
+    font-size: 16pt;
+    border-color: #ffffff00;
+    border-width: 3px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
+    
+  }
+  /* μορφοποιούμε το legend του fieldset, τοποθετώντας το στο κέντρο, αλλάζοντας γρμματοσειρά, προσθέτοτνας σκίαση*/
+  .form legend{
+    text-align: center;
+    font-family: cinzel;
+    font-size: 50px;
+    font-weight:500;
+    color: #000000;
+    text-shadow: 2px 2px #f58b8b67;
+  }
+
+  /* αλλάζουμε τη μοργή της μπάρας εισόδου κειμένου*/
+  input{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+
+  textarea{
+    width: 100%;
+    height: 75px;
+    margin-bottom: 10px;
+  }
+
+
+  /* μορφοποιούμε το κουμπί*/
+  .buttonn{
+    background-color: #ffffff; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: cinzel;
+  }
+  /* αλλάζουμε το χοβερ του κουμπιού*/
+  .buttonn:hover {
+    background-color: #f58b8b67;
+    color: white;
+  }
+
+  .buttonn:hover {
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.705), 0 17px 50px 0 #f58b8b67;
+  }
+
+  /*--------------- αφορά τη σελίδα about_us ----------------- */
+  /* μορφοποιούμε το πρώτο section της σελίδας βάζοντας το πίσω από το header για εφέ*/
+ .banner{
+  height: 500px;
+  background-image: url(lavhand.jpg);
+  background-attachment: fixed;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  background-size: cover;
+  
+ }
+
+ /* αφορά το section του πρώτου βιογραφικού */
+ .bio1{
+  margin-top: 550px;
+  background-color: #b5c9d175;
+  height: 500px;
+  display: flex;
+  
+ }
+/* μορφοποιούμε την εικόνα του πρώτου βιογραφικού μετακινώντας τη και βάζοντας σκίαση για εφέ */
+ .bio1 img{
+  /*float: left;*/
+  position: relative;
+  top: -50px;
+  margin-left: 100px;
+  margin-right: 20px;
+  height: 600px;
+  
+  box-shadow: 3px 3px 5px 2px rgb(75, 74, 74);
+ }
+ /* προσθέτουμε padding στο κείμενο του βιογραφικού*/
+ .bio1 p{
+  padding: 30px;
+  
+ }
+/* αφορά το section του δεύτερου βιογραφικού */
+ .bio2{
+  margin-top: 150px;
+  background-color: #b5c9d175;
+  height: 500px;
+  clear: both;
+  display: flex;
+  margin-bottom: 100px;
+ }
+ /* μορφοποιούμε την εικόνα του πρώτου βιογραφικού μετακινώντας τη και βάζοντας σκίαση για εφέ*/
+ .bio2 img{
+  clear: left;
+  /*float: right;*/
+  position: relative;
+  top: -50px;
+  margin-right: 100px;
+  margin-left: 20px;
+  height: 600px;
+  
+  box-shadow: 3px 3px 5px 2px rgb(75, 74, 74);
+  
+ }
+/* προσθέτουμε padding στο κείμενο του βιογραφικού*/
+ .bio2 p{
+  
+  padding: 30px;
+  
+ }
+
+
+
+
+/*καθορισμός της εικόνας που έχουμε θέσει ως backround */
+.productpage {
+    
+  background-image: url("img/1668932.jpg"); 
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -60px;
+  padding-bottom: 100px;
+  
+
+
+ }
+/* Αλλαγή φωτεινότητας των εικόνων για έχει εφε στο hover*/
+.productpage img{
+filter: brightness(70%);
+}  
+
+.productpage img:hover{
+filter: brightness(100%);
+}  
+
+
+
+/* Δημιουργία των πλαισίων που θα περιέχουν τις κατηγορίες
+ και τα προϊόντα στις αντίστοιχες σελίδες*/
+.Product {
+  
+  box-shadow: 0 4px 8px 0 rgba(247, 173, 160, 0.384);
+  max-width: 300px;
+  border-radius: 5%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+/* Ορισμός των διαστάσεων και των αποστάσεψν των εικόνων
+που βρίσκονται μέσα στα πλαίσια */
+.Product img{
+  /*width: 50%; */
+  width: 150px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+
+}
+
+
+
+/* Καθορισμός χρώματος γραμματοσειράς και στοίχησης για το κειμενάκι
+ μέσα στα πλαίσια των κατηγοριών και των προϊόντων */
+.Product h3,p{
+  color: rgb(90, 87, 87);
+  text-align: center;
+}
+
+
+
+
+
+/* Καθορισμός χρώματος γραμματοσειράς και στοίχησης για την τιμή 
+  των προϊόντων */
+.price {
+  color: grey;
+  font-size: 22px;
+  margin: 0;
+}
+
+
+.container{
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+
+
+
+
+
+/* Ορισμός της γρσμματοσειράς των τίτλος στις σελίδες των κατηγοριών
+και των προϊόντων */
+.titlewriting{
+margin: 20px auto;
+/*font-family: 'Ubuntu', 'Times New Roman';*/
+font-family: cinzel;
+
+font-size: 45px;
+font-weight: 500;
+font-weight: bold;
+
+color: #777777;
+/*color: #c79f9f; */
+text-align: center;
+letter-spacing: 5px;
+text-shadow: 2px 7px 5px rgb(166, 159, 168), 
+  0px -4px 10px rgba(255,255,255,0.3);
+
+  
+}
+
+
+/*Ορισμός της φωτογραφίας που έχει οριστεί ως βασική εικόνα στο πάνω 
+μέρος της σελίδας των κατηγοριών*/
+.overlay{
+
+background-color: #000;
+/*background-image:url("img/pexels-louis-2101187.jpg");*/
+background-image:url("img/φοντοοοο2.jpj.jpg");
+ background-position-x: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+position: relative;
+/*top:10px;*/
+
+height: 500px;
+margin-top: 100px;
+margin-bottom: 1px;
+margin-right: 2px;
+margin-left: 1px;
+
+
+/*opacity: 0.4;*/
+filter: brightness(75%);
+
+text-align: center;
+/*border: 100px solid #ffffff;
+background-origin: content-box;
+*/
+
+}
+
+
+
+/*Ορισμός του κουμπιού στο πλαίσιο των προϊόντων*/
+.cart_button{
+color: rgb(7, 7, 7);
+background-color: rgb(248, 218, 218);
+border: rgb(116, 103, 103);
+margin-bottom:5px;
+border-radius: 7%;
+height: 30px;
+width: 100px;
+}
+
+
+
+/*Ορισμός της φωτογραφίας που έχει οριστεί ως βασική εικόνα στο πάνω 
+μέρος των σελίδων των υποκατηγοριών(προϊόντων)*/
+
+.overlay2{
+width: 100%; 
+background-color: #000;
+background-image:url("img/bush-g98bad620e_1920.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position-y:bottom;
+position: relative;
+/*top:10px;*/
+
+height: 500px;
+margin-top: 100px;
+margin-bottom: 1px;
+margin-right: 2px;
+margin-left: 1px;
+
+
+/*opacity: 0.4;*/
+filter: brightness(75%);
+
+text-align: center;
+/*border: 100px solid #ffffff;
+background-origin: content-box;
+*/
+
+
+}
+
+
+
+/* Σχεδιασμός των κύκλων επιλογής χρωμάτων στην σελίδα του προϊόντως 
+για τα υπόλοιπα χρώματα που διαθέτει ένα προϊόν(Διακψσμητικά)*/
+.pink-dot {
+height: 25px;
+width: 25px;
+background-color: rgb(252, 168, 203);
+border-radius: 50%;
+display: inline-block;
+}
+.black-dot{
+height: 25px;
+width: 25px;
+background-color: rgb(0, 0, 0);
+border-radius: 50%;
+display: inline-block;
+}
+.red-dot{
+height: 25px;
+width: 25px;
+background-color: rgb(131, 2, 9);
+border-radius: 50%;
+display: inline-block;
+
+}
+
+/*Ορισμός των σύντομων πληροφοριών(συντομη περιγραφή,κωδικός...) του προϊόντως
+στην σελίδα του προϊόντως*/
+.details{
+max-width: 1200px;
+margin: 10%;
+padding: 15px;
+display: flex;
+margin-top: 100px;
+flex-flow: row;
+gap: 150px;
+}
+.description h2{
+color: #3f3939;
+padding: 0px;
+
+}
+.description a{
+color: rgb(177, 128, 138);
+}
+.description p{
+text-align: left;
+}
+
+
+
+
+/*Ορισμός των πεδιών που βρίσκονται τα τεχνικά χαρακτηριστικά, 
+η αναλυτική περιγραφή και οι αξιολογήσεις*/
+
+.technical{
+margin:10%;
+margin-top: 100px;
+}
+.technical p{
+color: #333;
+text-align: left;
+}
+.technical  h2{
+color: #333;
+text-align: left;
+margin-top: 50px;
+}
+.technical ul{
+
+padding: 0px;
+}
+.technical img{
+width:350px;
+height:250px;
+float:left;
+margin: 0 1em;
+}
+.technical h3{
+float:left;
+margin-right: 30px;
+}
+
+
+
+
+/*Η εμφάνηση των εικόνων του προϊόντως σε διαφορετικά
+χρώματα (Διακοσμητικό)*/
+
+.relative-photo{
+display:flex;
+}
+
+.relative-photo img{
+width:150px;
+height:120px;
+display:flex;
+}
+
+
+/*Δημιοργία του σχηματισμού των αστεριών που χρησιμοποιείται για τις κρητικές*/
+.product-rating{
+margin-top: 10px;
+margin-bottom: 10px;
+align-items: center;
+}
+/* Ορισμός του χρώματος για τα αστεράκια στην βαθμολόγηση των προϊόντων*/
+.checked {
+color: rgb(255, 180, 180);
+}
+
+
+
+
+/*Ορισμός του πλαισιού που χρησιμοποιήθηκε για την στοίχηση των προϊόντων 
+με την βοήθεια του grid*/
+
+.container{
+display: grid;
+margin-top: 160px;
+grid-template-columns: auto auto auto; 
+row-gap: 350px;
+grid-row-gap:50px;
+}
+
+/* Ορισμός της εμφάνισης των συνδέσμων στις σελίδες των προϊόντων*/
+.container a:link{
+color: rgb(90, 87, 87);
+text-decoration: none;
+}
+
+.container a:visited{
+color: rgb(90, 87, 87);
+text-decoration: none;
+}
+.container a:hover{
+color: rgb(248, 195, 195);
+text-decoration: none;
+}
+
+
+
+/*Ορισμός του κουμπιού στο πλαίσιο των κατηγοριών */
+.morebutton{
+
+  
+  background-color: rgb(204, 187, 187);
+  border: rgb(116, 103, 103);
+  color: rgb(7, 7, 7);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height:40px;
+  width:150px;
+  padding: 0 10px 0 11px;
+  margin-left: 70px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border-radius: 5%;
+}
+
+/*Ορισμός της εμφάνσης των πληροφοριών (υποκατηγοριών) 
+στα πλαίσια των κατηγοριών μααζί με τις επιλογές εμφάνισγης 
+για τις 2 από τις υποκατηγοριές που είναι σύνδεσμοι*/
+.categories{
+padding:0px
+}
+.categories li{
+text-align: center;
+padding-left:0;
+}
+.categories a:link{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.categories a:visited{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.categories a:hover{
+  color: rgb(168, 112, 131);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- 5η άσκηση: user's sign up form -----------------*/
+
+/* μορφοποιούμε το heading που χρησιμοποιείται στην κορυφή της σελίδας   */
+ .banner h2{
+  margin-top: 250px;
+  text-align: center;
+  font-family: cinzel;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 100;
+  
+ }
+
+/*μορφοποίηση του πλασίου που βρίσκεται μέσα η φόρμα*/
+.form2{
+  margin-top: 13cm;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3cm;
+}
+
+
+/* μορφοποίηση των κελιών της φόρμας */
+.form2 input{
+  background-color: white;
+  width: 100%;
+  padding: 17px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+/*ορίζουμε το χρώμα των αποδεκτών inputs*/
+.form2 input:valid {
+  background-color: #ffffff;
+}
+/*ορίζουμε το χρώμα των μη αποδεκτών inputs*/
+.form2 input:invalid {
+  border-color: #f58b8b67;
+}
+
+/*μορφοποιούμε τα legends/επικεφαλίδες της κάθε φόρμας*/
+.form2 legend{
+  text-align: center;
+    font-family: cinzel;
+    font-size: 50px;
+    font-weight:500;
+    color: #616161;
+    
+}
+/* μορφοποιούμε το κελί του select ωστε να ταιριαζει με τα inputs */
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  outline: 0;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid #f58b8b67;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 9px;
+  width: 300px;
+}
+
+
+
+
+
+/*ρυθμίσεις για οθόνη tablet */
+ @media screen and (max-width: 992px) {
+  /*μορφοποιούμε το grid του header για να ταιριάζει στα tablet*/
+  .header{
+    grid-template-columns: 30% 70% ;
+    text-align: center;
+    
+  }
+  /*αλλάζομε λιγο τη θέση του βιντεο στην αρχική οθόνη για να ταιριάζει καλύτερα*/
+  .myVideo{
+    padding-bottom: 50px;
+  }
+  
+  /* αλλάζουμε τη θέση του πλαισίου του βίντεο */
+  .as{
+   position: relative;
+   top: -15px; 
+    
+  }
+  /* αλλάζουμε το μέγεθος των γραμμάτων ανάλογα με την οθόνη*/
+  .content h1{
+    
+    font-size: 7vw;
+  }
+  /* στη φόρμα της σελίδας contant αλλάζουμε τα κενά για να είναι πιο ευανάγνωστη η σελίδα*/
+  .form{
+    padding-left: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /*αλλάζουμε το μέγεθος της γραμματοσειράς του legend της φόρμας */
+  .form2 legend{
+    font-size: 30px;
+  }
+
+
+
+  /*αλλάζουμε το ύψος του πλαισίου για να φαίνεται καλύτερα*/
+  .bio1, .bio2{
+    
+    height:min-content;
+  }
+ /*μορφοποιούμε τα μεγέθη και την τοποθέτηση των εικόνων στα σύντομα βιογραφικά*/
+  .bio1 img, .bio2 img{
+    position: static;
+    padding: 0%;
+    height: auto;
+    width: 80%;
+    margin: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+  }
+
+  /* αλλάζουμε τη στίχιση*/
+  .header-right li{
+    /*clear: left;*/
+    text-align: center;
+    
+  }
+  /* αλλάζουμε το grid για tablets που θέλουμε να έχει δύο στήλες*/
+  .fot{
+    grid-template-columns: auto auto ;
+  }
+/* αλλάζουμε το grid για tablets που θέλουμε να έχει δύο στήλες*/
+  .container{
+    grid-template-columns: auto auto ; 
+
+  }
+  /* αλλάζουμε το flex για tablets */
+  .details{
+    flex-direction: column;
+  }
+
+  /*αλλάζουμε το πόσο χώρο θα καλύπτουν τα select της φόρμας εγγρα΄φης*/
+  .form2 select{
+    width: 100%;
+    
+  }
+}
+
+
+ /* μορφοποιούμε τις σελίδες μας για κινητά*/
+ @media screen and (max-width: 600px) {
+
+  /* αλλάζουμε το header για την εκδοσή των κινητών αλλάζοντας το grd σε μία στήλη*/
+  .header{
+    grid-template-columns: auto;
+    margin-bottom: -15px;
+    background-color: #f7f4fd
+  }
+  /* αλλάζουμε τη στίχιση*/
+  .pro{
+    text-align: center;
+  }
+  /* αλλάζουμε το ύψος του πλαισίου του βίντεο */
+  .as{
+    height: 600px;
+  }
+    /*αλλάζομε λιγο τη θέση του βιντεο στην αρχική οθόνη για να ταιριάζει καλύτερα*/
+   .myVideo{
+    margin-top: -23px;
+    margin-bottom: 40px;
+    padding-bottom: 200px;
+    z-index: 0;
+    
+    max-width:max-content;
+    max-height:100vh;
+    object-fit: contain;
+   }
+
+   
+/* αλλάζουμε τη στίχιση*/
+   .header-right li{
+    /*clear: left;*/
+    text-align: center;
+    
+  }
+  /* αλλάζουμε το padding του περιεχομένου στην ενότητα που βρίσκεται */
+  .under_video{
+    padding-top: 50px;
+  }
+ /* αλλάζουμε το grid του footer*/
+  footer{
+    grid-template-columns: auto;
+    
+  }
+  /*αλλάζουμε τα κενά των φορμών*/ 
+  .form{
+    padding-left: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /* αλλάζουμε το ύψος και τον προσανατολισμό του flex των σύντομων βιογραφικών για καλύτερη εμφάνιση στα κινητά*/
+  .bio1, .bio2{
+    flex-direction: column;
+    height:min-content;
+  }
+ /*αλλάζουμε την τοποθέτηση των εικόνων στα σύντομα βιογραφικά*/
+  .bio1 img, .bio2 img{
+    position: static;
+    padding: 0%;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+ /*αλλάζουμε τα navigation του μενού προσανατολίζοντας το κατακόρυφα στα κινητά*/
+  .header-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  /* προσθέτουμε ένα κενό πάνω απο την ενότητα εισαγωγής της σελίδας about_us*/
+  .banner{
+    margin-top: 300px;
+    
+    
+  }
+  /*αλλάζουμε τα χρώματα του navigation menu στα κινητα για το καλύτερο αισθητικό αποτέλεσμα*/
+  .header-right li a.active {
+    background-color: #ffffffbb;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+
+  /*αλλαζουμε το grid στο footer*/
+  .fot{
+    grid-template-columns: auto  ;
+  }
+
+
+  /*αλλάζουμε το grid στα προιοντα για κινητα*/
+  .container{
+    grid-template-columns: auto ; 
+
+  }
+  /*αλλάζουμε το flex στη σελίδα του ατομικού προιοντος για κινητα*/
+  .relative-photo{
+    flex-direction: column ;
+  }
+  /*αλλάζουμε το flex στη σελίδα του ατομικού προιοντος για κινητα*/
+  .details{
+    flex-direction: column;
+  }
+  /* "κρύβουμε" δύο εικόνες καθώς δεν μας άρεσε όπως εμφανίζονταν στην έκδοση για κινητά */
+  .relative-photo img{
+    display: none;
+  }
+
+  /*αλλάζουμε το χώρο που κάλυπτουν τα select της συγκεκριμένης κλάσης στα κινητά*/
+  .form2 select{
+    width: 100%;
+    
+  }
+
+}

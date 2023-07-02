@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <title> Εγγραφή</title>
+        <script src="jv.js" ></script>
+        <link rel="stylesheet" href="my_style_rocks.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+
+    <body>
+        <div class="header">
+            
+            
+            <a href="index.html"><img src="img/logo.png" alt="vividarium logo" ></a>
+            
+            <nav >
+              <ul class="header-right">
+                <li><a  href="index.html">Αρχική</a></li>
+                <li><a href="product-categories.html">Προϊόντα</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+                <li><a  href="about_us.html"> Εμείς</a></li>
+                <li><a class="active" href="user.html"> Εγγραφή </a></li>
+              </ul>
+              </nav>
+              <a href="#index"><img src="cart.png" alt="cart photo" style="margin-top:20px ;" ></a>
+          </div>
+        <section class="banner">
+            
+            <h2> sign up </h2>
+            
+        </section>
+        <div class="form2">
+            <form class="inform" method="POST" action="register-user" autocomplete="on">
+                <fieldset>
+                <legend> sign up Form</legend>
+                <label > Όνομα:</label>
+                <input  type="text" id="name" name="name"  placeholder="Το όνομα σου..." required>
+                
+                
+                <label > Επίθετο:</label>
+                <input  type="text" id="lastname" name="last_name" placeholder="Το επίθετο σου..."  required>
+    
+               
+                <label > Ηλεκτρονική διεύθυνση ταχυδρομείου:</label>
+                <input  type="text" name="email" placeholder="Το email σου..."  required>
+    
+                <label > Διεύθυνση κατοικίας:</label>
+                <input  type="text" name="addresshouse" placeholder="Η διεύθυνση κατοικίας σου..."  required>
+                
+    
+                <label > Τηλέφωνο επικοινωνίας:</label>
+                <input  type="tel" name="phone" id="phone" placeholder="Συμπλήρωσε το κινητό σου χωρίς κενά... π.χ. 6983962167"  required>
+                
+                
+                
+                <label > Ημερομηνία γέννησης: </label>
+                <input type="date" id="birth" name="trip-start"
+                    value="1950-11-07"
+                    min="1940-01-01" max="2022-01-01"   required>
+    
+    
+               
+                
+                <label > Τρόπος πληρωμής: </label>
+                <input  type="text"  name="payment method" placeholder="π.χ. αντικαταβολή, πιστωτική κάρτα, Paypal Id..." required list="paymentmethod">
+    
+               <datalist id="paymentmethod">
+                    <option>αντικαταβολή</option>
+                    <option>πιστωτική κάρτα</option>
+                    <option>paypal id</option>
+               </datalist>
+                
+               <label > Φύλο </label>
+               <input  type="text"  name="gender" id="gender" placeholder="π.χ. Άνδρας, Γυναίκα, άλλο ..."  required list="genderr">
+               
+                <datalist id="genderr">
+                    <option>Άνδρας</option>
+                    <option>Γυναίκα</option>
+                    <option>Άλλο</option>
+                </datalist>
+
+                <label > Διεύθυνση αποστολής:</label>
+                <input  type="text"  name="address" placeholder="Η διεύθυνση σου..."   required>
+                
+                <label > Όνομα χρήστη:</label>
+                <input  type="text"  name="user" placeholder="π.χ. user123..."  required>
+
+                <label > Κωδικός πρόσβασης:</label>
+                <input  type="text" id="pass1"  name="pass" placeholder="πρέπει να περιέχει τουλάχιστον ένα νούμερο, ένα κεφαλαίο και ένα μικρό γράμμα και να αποτελείται απο τουλάχστον 8 χαρακτήρες" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required autocomplete="off">
+
+                <label > Επανάληψη Κωδικού πρόσβασης:</label>
+                <input  type="text" id="pass2"  name="pass2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required autocomplete="off">
+
+                <label > Τρόπος επικοινωνίας:</label>
+                <input  type="text"  name="contact_method" placeholder="π.χ. viber, whatsapp, κτλ..."  required>
+                <fieldset>
+                    <legend>questions for validation</legend>
+                    
+                    <div class="select"  >
+                        <label > Συχνότερος τρόπος πληρωμής:</label>
+                        <select    name="freqpay"  required autocomplete="off">
+                            <option value ="" label="Επιλέξτε απο τα παρακάτω" disabled></option>
+                            <option value="cash"> Μετρητά</option>
+                            <option value="card"> Κάρτα</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div class="select"  >
+                        <label > Πόσο συχνά αγοράζετε μέσω διαδικτύου:</label>
+                        <select  name="freqbuying"   required autocomplete="off">
+                            <option value ="" label="Επιλέξτε απο τα παρακάτω" disabled> </option>
+                            <option value="onemonth" > Μία φορά το μήνα </option>
+                            <option value="twice"> Δύο φορές το μήνα </option>
+                            <option value="oneperweek"> Περισσότερες από δύο φορές το μήνα</option>
+                        </select>
+                    </div>
+                    <br>
+
+
+                    <div class="select"  >
+                        <label > Πόσα χρήματα ξοδεύετε συνήθως σε κάθε αγορά:</label>
+                        <select  name="moneyspend"   required autocomplete="off">
+                            <option value ="" label="Επιλέξτε απο τα παρακάτω" disabled> </option>
+                            <option value="lessfifty" > Λιγότερα από 50 ευρώ</option>
+                            <option value="fiftytooneh"> 50 έως 100 ευρώ </option>
+                            <option value="morethan1h"> Περισσότερα από 100 ευρώ</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div class="select"  >
+                        <label > Ποιά εποχή κάνετε συνήθως τις περισσότερες αγορές;</label>
+                        <select  name="epoches"   required autocomplete="off">
+                            <option value ="" label="Επιλέξτε απο τα παρακάτω" disabled> </option>
+                            <option value="winter" > Χειμώνας</option>
+                            <option value="spring"> Άνοιξη </option>
+                            <option value="summer"> Καλοκαίρι</option>
+                            <option value="autumn"> Φθινόπωρο</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <label > Τι είδους προϊόντα αγοράζετε συχνότερα;</label>
+                    <input  type="text"  name="freqkind" placeholder=""  required autocomplete="off">
+
+                
+
+                    
+
+
+
+                </fieldset>
+            </fieldset>
+            <button type="submit" class="buttonn" onclick="first()" > Submit Form</button>
+            </form>
+            
+        </div>
+       
+
+        <footer>
+            <div class="fot">
+            <section class="contact_data"> 
+                <h4> Contact info</h4>
+                <ul>
+                    <li>Email: email@mail.gr</li>
+                    <li>Τηλέφωνο επικοινωνίας: ... </li>
+                    <li>Τηλέφωνο παραγγελιών: ...</li>
+                
+                </ul>
+            </section>
+           
+            <div class="footer_menu"> 
+                <a href="index.html"><img src="img/logo.png" alt="vividarium logo" ></a>
+                <nav >
+                    <ul class="header-right" style="width: 130px; padding:0; display: inline-block;
+                    text-align: center; ">
+                      <li><a  href="index.html">Home</a></li>
+                      <li><a href="product-categories.html">Προϊόντα</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a  href="about_us.html">About</a></li>
+                      <li><a class="active" href="user.html"> Εγγραφή </a></li>
+                    </ul>
+                    </nav>
+                    
+                </div>
+    
+            <section class="social"> 
+                <h4>Find us on Social media! </h4>
+                
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </section>
+            </div>
+          </footer>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</html>
